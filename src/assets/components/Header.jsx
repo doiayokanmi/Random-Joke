@@ -29,7 +29,7 @@ const Header = () => {
     <>
         <nav>
             <div id="navBrand">
-                Random Joke App
+                <img className='img-fluid' width={"150px"} src="/logo.PNG" alt="" />
             </div>
 
             <div id="nav-links" className={isNavOpen ? "open" : ""}>

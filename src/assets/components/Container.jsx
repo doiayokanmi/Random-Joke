@@ -5,7 +5,6 @@ import axios from 'axios';
 const Container = () => {
 
     const [jokes, setJokes] = useState("Random Jokes Will Display Here")
-    const [loading, setLoading] = useState("none")
 
     const endpoint = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
     const getData = () => {
