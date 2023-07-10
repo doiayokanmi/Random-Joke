@@ -1,0 +1,42 @@
+@media screen and (max-width: 600px) {
+    :root {
+        --padding: 1em;
+    }
+    
+    #nav-links {
+        position: absolute;
+        top: 55px;
+        height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        transition: .3s ease;
+        background-color: var(--primaryColor);
+    }
+
+    nav a {
+        margin: 30px 0;
+
+    }
+    
+    #menu {
+        display: block;
+    }
+
+    #container {
+        width: 100%;
+        height: auto;
+    }
+    
+    #container p {
+        font-size: 1.5em;
+    }
+
+    .open {
+        height: 40vh !important;
+        padding: var(--padding);
+
+    }
+}

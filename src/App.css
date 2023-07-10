@@ -14,6 +14,7 @@
 #root {
   width: 100vw;
   height: 100vh;
+  padding: var(--padding);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +37,12 @@ nav {
   color: #fff;
   justify-content: space-between;
 }
+
+#menu {
+  display: none;
+}
+
+
 footer {
   bottom: 0;
   text-align: center;
@@ -52,9 +59,9 @@ nav a {
 
 #container {
   padding: 1em;
-  width: 70vw;
+  width: 80vw;
   border: 2px solid var(--primaryColor);
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Header = () => {
 
@@ -19,6 +19,12 @@ const Header = () => {
             icon: "fa-solid fa-folder-open"
         }
     ]
+
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const navOpen = () => {
+        setIsNavOpen(!isNavOpen)
+    }
   return (
     <>
         <nav>
@@ -26,13 +32,15 @@ const Header = () => {
                 Random Joke App
             </div>
 
-            <div id="nav-links">
+            <div id="nav-links" className={isNavOpen ? "open" : ""}>
                 {
                     navLinks.map ((links, index) => (
                         <a key={index} href={links.link}><i className={links.icon}></i> {links.title}</a>
                     ))
                 }
             </div>
+
+            <i className={isNavOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"} id='menu' onClick={navOpen}></i>
         </nav>
     </>
   )
