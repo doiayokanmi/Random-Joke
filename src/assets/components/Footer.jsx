@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
         <footer>
-             Damilola Ibrahim @ 2023 - Translator Web App
+             Damilola Ibrahim @ 2023 - Random Joke App
         </footer>
     </>
   )
