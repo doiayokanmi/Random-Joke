@@ -7,13 +7,14 @@
 
 :root {
   --padding: 1.4em 5em;
-  --primaryColor: #230031; 
+  --primaryColor: #3a5a40; 
   --texColor: #fff;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   padding: var(--padding);
   display: flex;
   align-items: center;
@@ -72,6 +73,7 @@ nav a {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 #container p {

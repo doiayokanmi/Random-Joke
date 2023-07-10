@@ -24,7 +24,7 @@ const Container = () => {
         <div id="container">
             <img className='img-fluid mb-3' width={"50px"} src="/Disk-1s-200px.svg" alt="" />
             <p>{jokes}</p>
-            <button className='btn btn-lg' onClick={getData}>Generate Joke</button>
+            <button className='btn btn-lg' onClick={getData}>Generate Joke <i class="fa-solid fa-shuffle"></i></button>
         </div>
     </>
   )
